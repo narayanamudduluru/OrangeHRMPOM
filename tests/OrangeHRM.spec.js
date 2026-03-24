@@ -13,13 +13,10 @@ test('OrangeHRM', async({page})=>{
     //await page.waitForTimeout(3000);
 
     const homepage = new HomePage(page)
-    await page.waitForTimeout(3000);
+    //await page.waitForTimeout(3000);
     await homepage.SearchAdminUser('Admin','Ranga Akunuri','Enabled')
     await page.waitForTimeout(5000);
 
-    const logoutpage = new LogoutPage(page)
-    await page.waitForTimeout(3000);
-    await logoutpage.logout()
 
     // await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     // await page.getByPlaceholder('Username').fill("Admin")

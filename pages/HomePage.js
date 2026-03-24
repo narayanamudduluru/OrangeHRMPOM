@@ -17,13 +17,14 @@ exports.HomePage =  class HomePage{
         //firstName_1774240050329 Test Test
 
     }
+    
     async gotoLoginPage(){
         await this.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
 
     async SearchAdminUser(username, empName, status){
         await this.page.locator(this.adminbtn).click();
-        await this.page.locator(this.username_Txt).fill(username);//Admin
+        await this.page.locator(this.username_Txt).fill(username);
         await this.page.locator(this.UserRoleBtn).click()
 
         const OptionsList = await this.page.$$(this.RoleOptions);

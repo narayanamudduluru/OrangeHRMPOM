@@ -13,7 +13,7 @@ test("Multiple tabs", async({})=>{
 
     const [newTab] = await Promise.all([
     page.waitForEvent("popup"), //Playwright Consider popup as a Tab.
-    await page.locator("#tabButton").click()
+    await page.locator("#windowButton").click()
     ]);
     
     await newTab.waitForLoadState();

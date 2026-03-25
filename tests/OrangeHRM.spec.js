@@ -1,7 +1,6 @@
 import{test, expect} from '@playwright/test';
 import { loginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
-import { LogoutPage } from '../pages/LogoutPage';
 
 test('OrangeHRM', async({page})=>{
 
